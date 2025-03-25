@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+
+/* Normalize all paragraphs with no margins */
+p {
+  margin: 0;
+}
+
+.link-unstyled {
+  text-decoration: none;
+}
+
+/* start of header section */
+header {
+  background-image: url("../../assets/imgs/drew-coffman-1872.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+header .header-content {
+  margin: 235px auto;
+  width: 700px;
+}
+
+header .header-content .header-welcome-text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+header h1 {
+  font-family: "Alegreya", sans-serif;
+  font-size: 76px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+header .header-content .header-info-text {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 24px;
+  margin: 20px 0;
+  line-height: 40px;
+}
+
+header .header-links {
+  margin-top: 30px;
+}
+
+header .header-link {
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  padding: 15px 28px;
+  border-radius: 4px;
+}
+
+header .header-link.learn-more-link {
+  background-color: #8e7754;
+  margin-right: 6px;
+}
+
+header .header-link.contact-us-link {
+  border: 1px solid #fff;
+  margin-left: 6px;
+}
+/* end of header section */
