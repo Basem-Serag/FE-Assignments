@@ -6,9 +6,62 @@ body {
 p {
   margin: 0;
 }
+h2 {
+  margin: 0;
+}
 
+/* Utilities */
 .link-unstyled {
   text-decoration: none;
+}
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+.container {
+  padding: 70px 140px;
+}
+.img-appearance {
+  width: 100%;
+  height: auto;
+}
+/* .card-vertical { 
+
+} */
+.card-horizontal {
+  overflow: hidden;
+}
+.card-horizontal .card-img-wrapper {
+  float: left;
+  width: 47%;
+}
+.card-horizontal .card-img-wrapper .card-img {
+  width: 100%;
+  height: auto;
+}
+.card-horizontal .card-body {
+  float: left;
+  width: 47%;
+  margin-top: 50px;
+}
+.card-horizontal .card-body .card-title {
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #303030;
+}
+.card-horizontal .card-body .card-text {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #686868;
+}
+.mr-3 {
+  margin-right: 3%;
+}
+.ml-3 {
+  margin-left: 3%;
 }
 
 /* start of header section */
@@ -29,20 +82,20 @@ header .header-content {
 }
 
 header .header-content .header-welcome-text {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   font-size: 22px;
   margin-bottom: 5px;
 }
 
 header h1 {
-  font-family: "Alegreya", sans-serif;
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
   font-size: 76px;
   margin: 0;
   margin-bottom: 18px;
 }
 
 header .header-content .header-info-text {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   margin: 20px 0;
   line-height: 40px;
@@ -54,7 +107,7 @@ header .header-links {
 
 header .header-link {
   color: #fff;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding: 15px 28px;
   border-radius: 4px;
@@ -70,3 +123,33 @@ header .header-link.contact-us-link {
   margin-left: 6px;
 }
 /* end of header section */
+
+/* start of about section */
+.about-section .list-item {
+  padding: 15px 0;
+}
+.about-section .icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.about-section .text {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #686868;
+}
+/* end of about section */
+
+/* start of about section */
+.location-section .card-text.extra {
+  margin-top: 20px;
+}
+.location-section .card-horizontal {
+  background: #f8f8f8;
+}
+/* end of about section */
