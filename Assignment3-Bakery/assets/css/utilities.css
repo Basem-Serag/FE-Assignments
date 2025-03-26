@@ -1,0 +1,81 @@
+.mr-3 {
+  margin-right: 3%;
+}
+.ml-3 {
+  margin-left: 3%;
+}
+.heading-style {
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #303030;
+}
+.info-text-style {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #686868;
+  line-height: 30px;
+}
+.link-unstyled {
+  text-decoration: none;
+}
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+.list-icon-appearance {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.list-item {
+  padding: 15px 0;
+}
+.container {
+  padding: 70px 140px;
+  overflow: hidden;
+}
+.img-appearance {
+  width: 100%;
+  height: auto;
+}
+.card-horizontal .card-img-wrapper {
+  float: left;
+  width: 47%;
+}
+.card-horizontal .card-img-wrapper .card-img {
+  width: 100%;
+  height: auto;
+}
+.card-horizontal .card-body {
+  float: left;
+  width: 46%;
+  margin-top: 50px;
+}
+.card-horizontal .card-body .card-title {
+  font-family: "Alegreya", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #303030;
+}
+.card-horizontal .card-body .card-text {
+  font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  color: #686868;
+}
+.card-vertical {
+  float: left;
+  width: 32.3%;
+}
+.card-vertical .card-img-wrapper {
+  width: 90%;
+}
+.card-vertical .card-body {
+  text-align: center;
+  width: 90%;
+}

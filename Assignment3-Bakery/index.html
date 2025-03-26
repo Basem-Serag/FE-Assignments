@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bakery Shop</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Start of hero section -->
     <header>
       <div class="header-content">
         <p class="header-welcome-text">Welcome to</p>
-        <h1>Family Bakery</h1>
-        <p class="header-info-text">
+        <h1 class="heading-style">Family Bakery</h1>
+        <p class="info-text-style">
           We're the biggest, best equipped and most advanced Bakery in the
           greater Los Angeles area.
         </p>
@@ -58,46 +59,48 @@
             </p>
             <ul class="info-list-icon list-unstyled">
               <li class="list-item">
-                <div class="icon-wrapper">
+                <div class="list-icon-appearance">
                   <img
                     src="./assets/imgs/Icons/leaf.png"
                     alt="leaf icon"
                     class="img-appearance"
                   />
                 </div>
-                <span class="text">We care about environment. </span>
+                <span class="info-text-style">We care about environment. </span>
               </li>
               <li class="list-item">
-                <div class="icon-wrapper">
+                <div class="list-icon-appearance">
                   <img
                     src="./assets/imgs/Icons/people.png"
                     alt="people icon"
                     class="img-appearance"
                   />
                 </div>
-                <span class="text"
+                <span class="info-text-style"
                   >We are trusted by hundreds of clients.
                 </span>
               </li>
               <li class="list-item">
-                <div class="icon-wrapper">
+                <div class="list-icon-appearance">
                   <img
                     src="./assets/imgs/Icons/heart.png"
                     alt="heart icon"
                     class="img-appearance"
                   />
                 </div>
-                <span class="text">Social media loves us! </span>
+                <span class="info-text-style">Social media loves us! </span>
               </li>
               <li class="list-item">
-                <div class="icon-wrapper">
+                <div class="list-icon-appearance">
                   <img
                     src="./assets/imgs/Icons/check.png"
                     alt="check icon"
                     class="img-appearance"
                   />
                 </div>
-                <span class="text">This list is super easy to create. </span>
+                <span class="info-text-style"
+                  >This list is super easy to create.
+                </span>
               </li>
             </ul>
           </div>
@@ -135,5 +138,146 @@
       </div>
     </section>
     <!-- End of location section -->
+
+    <!-- Start of baking section -->
+    <div class="baking-section">
+      <div class="container">
+        <div class="baking-section-content">
+          <h3 class="heading-style">Our Baking</h3>
+          <p class="info-text-style">
+            Learn more about them. We have worked truly hard to make them
+            perfect for every use.
+          </p>
+        </div>
+
+        <div class="card-vertical">
+          <div class="card-img-wrapper">
+            <img
+              src="./assets/imgs/ben-garratt.jpg"
+              alt="ben garratt"
+              class="card-img img-appearance"
+            />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title heading-style">Superior Breads</h4>
+            <p class="card-text info-text-style">
+              Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis
+              libero, at semper mauris velit a velit. Phasellus commodo turpis
+              et lacinia posuere.
+            </p>
+          </div>
+        </div>
+        <div class="card-vertical">
+          <div class="card-img-wrapper">
+            <img
+              src="./assets/imgs/stas-ovsky.jpg"
+              alt="stas ovsky"
+              class="card-img img-appearance"
+            />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title heading-style">Superior Breads</h4>
+            <p class="card-text info-text-style">
+              Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis
+              libero, at semper mauris velit a velit. Phasellus commodo turpis
+              et lacinia posuere.
+            </p>
+          </div>
+        </div>
+        <div class="card-vertical">
+          <div class="card-img-wrapper">
+            <img
+              src="./assets/imgs/clem-onojeghuo.jpg"
+              alt="clem"
+              class="card-img img-appearance"
+            />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title heading-style">Superior Breads</h4>
+            <p class="card-text info-text-style">
+              Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis
+              libero, at semper mauris velit a velit. Phasellus commodo turpis
+              et lacinia posuere.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of baking section -->
+
+    <!-- Start of contact section -->
+    <section id="contactUs" class="contact-section">
+      <div class="card-horizontal">
+        <div class="container">
+          <div class="card-body mr-3">
+            <h2 class="card-title">Contact Information</h2>
+            <p class="card-text">
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+              luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <p class="card-text extra">Our contact details:</p>
+            <ul class="info-list-icon list-unstyled">
+              <li class="list-item">
+                <div class="list-icon-appearance">
+                  <img
+                    src="./assets/imgs/Icons/map.png"
+                    alt="leaf icon"
+                    class="img-appearance"
+                  />
+                </div>
+                <span class="info-text-style">We care about environment. </span>
+              </li>
+              <li class="list-item">
+                <div class="list-icon-appearance">
+                  <img
+                    src="./assets/imgs/Icons/phone.png"
+                    alt="people icon"
+                    class="img-appearance"
+                  />
+                </div>
+                <span class="info-text-style"
+                  >We are trusted by hundreds of clients.
+                </span>
+              </li>
+              <li class="list-item">
+                <div class="list-icon-appearance">
+                  <img
+                    src="./assets/imgs/Icons/headphone.png"
+                    alt="heart icon"
+                    class="img-appearance"
+                  />
+                </div>
+                <span class="info-text-style">Social media loves us! </span>
+              </li>
+              <li class="list-item">
+                <div class="list-icon-appearance">
+                  <img
+                    src="./assets/imgs/Icons/email.png"
+                    alt="check icon"
+                    class="img-appearance"
+                  />
+                </div>
+                <span class="info-text-style"
+                  >This list is super easy to create.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-map-wrapper ml-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.3297322077974!2d31.354164075010893!3d30.05608161802024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d51bf1bd5f9%3A0xf3f36e53e96d1fd3!2sRoute!5e0!3m2!1sen!2seg!4v1743023872171!5m2!1sen!2seg"
+              width="580"
+              height="580"
+              style="border: 0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of contact section -->
   </body>
 </html>
