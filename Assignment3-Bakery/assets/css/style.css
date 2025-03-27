@@ -5,6 +5,7 @@ body {
 /* Normalize */
 h2,
 h3,
+h5,
 p {
   margin: 0;
 }
@@ -16,7 +17,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
   overflow: hidden;
   color: #fff;
 }
@@ -87,7 +87,6 @@ header .header-link.contact-us-link {
 /* start of baking section */
 .baking-section .baking-section-content {
   padding-bottom: 50px;
-  text-align: center;
 }
 .baking-section .baking-section-content .heading-style {
   font-size: 30px;
@@ -105,7 +104,7 @@ header .header-link.contact-us-link {
 .contact-section .card-horizontal {
   background: #f8f8f8;
 }
-.contact-section .list-icon-appearance {
+.contact-section .list-icon-circle-style {
   background: #8e7754;
 }
 .contact-section .card-body .card-text.extra {
@@ -116,3 +115,73 @@ header .header-link.contact-us-link {
   width: 47%;
 }
 /* end of contact section */
+
+/* start of footer section */
+footer {
+  background-color: #403d38;
+}
+footer .footer-link {
+  width: 22%;
+  padding: 0 15px;
+  float: left;
+}
+footer .footer-link.contact {
+  background-image: linear-gradient(#403d38e0, #403d38e0),
+    url("../imgs/contact-details-map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .footer-link .heading-style {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+footer .footer-link .info-text-style {
+  color: #969696;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+footer .footer-link .info-list-item {
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #969696;
+}
+footer .footer-link .info-list-item:last-child {
+  border-bottom: unset;
+}
+footer .sub-info-text {
+  margin-left: 40px;
+}
+footer .info-list-item.contact {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+footer .footer-contact-link-icon {
+  width: 35px;
+  height: auto;
+  vertical-align: middle;
+}
+
+footer .copyright-section {
+  background: #353330;
+}
+footer .copyright-section .footer-img {
+  margin-bottom: 20px;
+}
+footer .copyright-section .info-text-style {
+  font-size: 15px;
+  margin-top: 5px;
+}
+footer .copyright-section .social-logos {
+  padding-top: 20px;
+}
+footer .copyright-section .logo {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #8c8a8638;
+  margin-right: 8px;
+}
+/* end of footer section */
