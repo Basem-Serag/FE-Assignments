@@ -149,3 +149,12 @@
   border-color: #ff305b;
   color: #ffffff;
 }
+
+@media (min-width: 576px) {
+  .section-space {
+    padding: 50px 30px;
+  }
+  .section-title {
+    padding-bottom: 30px;
+  }
+}

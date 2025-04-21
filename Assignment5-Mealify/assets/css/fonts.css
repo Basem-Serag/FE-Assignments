@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Amatic SC";
+  src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Amatic SC";
+  src: url("../fonts/Amatic_SC/AmaticSC-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter_24pt-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter_24pt-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --font-base: "Open Sans", system-ui, sans-serif;
+  --font-heading: "Amatic SC", sans-serif;
+  --font-accent: "Inter" sans-serif;
+}

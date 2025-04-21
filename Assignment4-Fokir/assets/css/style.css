@@ -10,7 +10,6 @@
   padding: 20px 10px;
 }
 .header .navbar .navbar-logo {
-  width: 25%;
   float: left;
   color: #ff305b;
   font-family: "Roboto", sans-serif;
@@ -18,7 +17,6 @@
   font-weight: 800;
 }
 .header .navbar .navbar-nav {
-  width: 45%;
   float: right;
 }
 .header .navbar .navbar-nav .nav-item {
@@ -130,7 +128,6 @@
 }
 .about-section .img-card {
   float: left;
-  width: 35%;
 }
 .about-section .img-wrapper {
   border: 8px solid #555555;
@@ -166,7 +163,6 @@
 }
 .about-section .section-content {
   float: right;
-  width: 55%;
   margin-top: 5px;
 }
 .about-section .section-content .about-section-title {
@@ -200,7 +196,6 @@
 }
 .about-section .section-content .about-info-list .info-item {
   float: left;
-  width: 50%;
   padding-bottom: 15px;
 }
 .about-section .section-content .about-info-links .link-item {
@@ -229,6 +224,28 @@
 .about-section .social-link .social-link-icon {
   font-size: 20px;
 }
+@media (max-width: 576px) {
+  .about-section {
+    padding: 0;
+  }
+  .about-section .about-section-body {
+    padding: 50px;
+  }
+  .about-section .img-wrapper {
+    border: 0;
+  }
+  .about-section .img-wrapper:hover .img-overlay {
+    opacity: 0;
+  }
+  .about-section .img {
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+  .about-section .section-content {
+    margin-top: 25px;
+  }
+}
 /* end of about section */
 
 /* start of services section */
@@ -237,7 +254,6 @@
 }
 .services-section .card {
   float: left;
-  width: 25%;
   padding: 30px 5px;
   transition: all 0.5s ease;
 }
@@ -308,7 +324,6 @@
 }
 .portfolio-section .gallery-card .gallery-img {
   float: left;
-  width: 30%;
   margin: 15px;
   position: relative;
 }
@@ -350,7 +365,6 @@
 
 .portfolio-section .info-counter .counter-item {
   float: left;
-  width: 25%;
   margin: 0 auto;
 }
 .portfolio-section .info-counter .counter-icon {
@@ -465,7 +479,6 @@
 }
 .blog-section .blog-section-card {
   float: left;
-  width: 33.3%;
   padding: 15px;
 }
 .blog-section .blog-section-card .card-body {

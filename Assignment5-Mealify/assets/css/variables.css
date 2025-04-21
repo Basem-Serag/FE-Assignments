@@ -1,0 +1,25 @@
+:root {
+  /* Color Pallette */
+  --primary-color: hsl(0, 84%, 44%);
+  --primary-light-color: hsl(0, 84%, 49%);
+  --neutral-base-color: hsl(240, 7%, 32%); /* #4f4f5a  */
+  --neutral-medium-color: hsl(240, 7%, 53%); /* #7f7f90  */
+  --neutral-dark-color: hsl(240, 7%, 23%); /* #37373f   */
+  --light-color: #ffffff;
+  --bg-color: #eeeeee;
+  --dark-color: #000000;
+
+  /* Typography */
+  --font-base: "Open Sans", system-ui, sans-serif;
+  --font-heading: "Amatic SC", sans-serif;
+  --font-accent: "Inter" sans-serif;
+
+  /* Space variables */
+  --space-sm: 4px;
+  --space-md: 8px;
+  --space-lg: 16px;
+  --space-xl: 30px;
+  --section-p-space: 40px 5px;
+  --section-m-space: 40px 0;
+  --gap: 24px;
+}
