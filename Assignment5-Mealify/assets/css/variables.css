@@ -1,20 +1,23 @@
 :root {
-  /* Color Pallette */
+  /* ===== Colors: Light Mode ===== */
   --primary-color: hsl(0, 84%, 44%);
   --primary-light-color: hsl(0, 84%, 49%);
-  --neutral-base-color: hsl(240, 7%, 32%); /* #4f4f5a  */
-  --neutral-medium-color: hsl(240, 7%, 53%); /* #7f7f90  */
-  --neutral-dark-color: hsl(240, 7%, 23%); /* #37373f   */
+
+  --neutral-dark-color: hsl(240, 7%, 23%);
+  --neutral-base-color: hsl(240, 7%, 32%);
+  --neutral-medium-color: hsl(240, 7%, 53%);
+  --heading-color: hsl(240, 7%, 23%);
+  --text-color: hsl(240, 7%, 32%);
   --light-color: #ffffff;
   --bg-color: #eeeeee;
   --dark-color: #000000;
 
-  /* Typography */
+  /* ===== Typography ===== */
   --font-base: "Open Sans", system-ui, sans-serif;
   --font-heading: "Amatic SC", sans-serif;
-  --font-accent: "Inter" sans-serif;
+  --font-accent: "Inter", sans-serif;
 
-  /* Space variables */
+  /* ===== Spacing ===== */
   --space-sm: 4px;
   --space-md: 8px;
   --space-lg: 16px;
@@ -22,4 +25,20 @@
   --section-p-space: 40px 5px;
   --section-m-space: 40px 0;
   --gap: 24px;
+}
+
+/* ========================
+   Dark Mode Overrides
+   ======================== */
+.dark {
+  --primary-color: hsl(46, 100%, 50%);
+  --primary-light-color: hsl(46, 100%, 60%);
+  --neutral-dark-color: hsl(240, 5%, 12%);
+  --neutral-base-color: hsl(240, 5%, 18%);
+  --neutral-medium-color: hsl(240, 5%, 65%);
+  --heading-color: hsl(240, 47%, 96%);
+  --text-color: hsl(240, 5%, 73%);
+  --light-color: hsl(240, 5%, 7%);
+  --bg-color: hsl(240, 5%, 10%);
+  --dark-color: #ffffff;
 }

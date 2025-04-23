@@ -24,27 +24,35 @@
     <nav class="navbar">
       <div class="container">
         <div
-          class="navbar-wrapper d-flex justify-content-between align-items-center"
+          class="navbar-wrapper grid-container mobile-grid d-flex align-items-center"
         >
-          <div class="navbar-brand">
+          <div class="navbar-brand grid-item col-md-4">
             <a href="#" class="link-unstyled brand-logo">Mealify</a>
           </div>
-          <ul class="nav-links list-unstyled d-flex">
+
+          <ul class="nav-links list-unstyled d-flex grid-item col-md-6">
             <li>
               <a href="#home" class="text-capitalize link-unstyled">home</a>
             </li>
             <li>
-              <a href="#" class="text-capitalize link-unstyled">chefs</a>
+              <a href="#chefs" class="text-capitalize link-unstyled">chefs</a>
             </li>
             <li>
-              <a href="#" class="text-capitalize link-unstyled">gallery</a>
+              <a href="#gallery" class="text-capitalize link-unstyled"
+                >gallery</a
+              >
             </li>
             <li>
-              <a href="#" class="text-capitalize link-unstyled">contact</a>
+              <a href="#contact" class="text-capitalize link-unstyled"
+                >contact</a
+              >
             </li>
           </ul>
-          <div class="theme-setting">
-            <a class="link-unstyled" href="#">🌑</a>
+
+          <div class="theme-setting grid-item col-md-2">
+            <button id="theme-toggle" class="link-unstyled" role="button">
+              <i class="fa-solid fa-moon"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -54,7 +62,7 @@
     <header class="header">
       <div class="container">
         <div
-          class="grid-container d-flex align-items-center justify-content-between"
+          class="grid-container mobile-grid d-flex align-items-center justify-content-between"
         >
           <div class="grid-item col-12 col-sm-12 col-lg-5">
             <div class="header-text">
@@ -95,14 +103,14 @@
     <!-- end header section -->
 
     <!-- start chefs section -->
-    <section class="chefs-section section-my section-p">
+    <section class="chefs-section section-my section-p" id="chefs">
       <div class="container text-center">
         <span class="section-text">chefs</span>
         <h2 class="section-title">
           our <span class="colored-title-text">Professional</span>Chefs
         </h2>
-        <div class="grid-container">
-          <div class="grid-item col-12 col-sm-12 col-lg-4">
+        <div class="grid-container mobile-grid">
+          <div class="grid-item col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="figure">
                 <img
@@ -128,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-item col-12 col-sm-12 col-lg-4">
+          <div class="grid-item col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="figure">
                 <img
@@ -154,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-item col-12 col-sm-12 col-lg-4">
+          <div class="grid-item col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
               <div class="figure">
                 <img
@@ -186,7 +194,7 @@
     <!-- end chefs section -->
 
     <!-- start gallery section -->
-    <section class="gallery-section section-my section-p">
+    <section class="gallery-section section-my section-p" id="gallery">
       <div class="container text-center">
         <span class="section-text">gallery</span>
         <h2 class="section-title">
@@ -311,7 +319,7 @@
     <!-- end gallery section -->
 
     <!-- start contact section -->
-    <section class="contact-section section-my section-p">
+    <section class="contact-section section-my section-p" id="contact">
       <div class="container">
         <span class="section-text">contact</span>
         <h2 class="section-title">
@@ -384,7 +392,7 @@
         </div>
 
         <form class="form">
-          <div class="grid-container">
+          <div class="grid-container mobile-grid">
             <div class="grid-item col-12 col-sm-12 col-lg-6">
               <input
                 type="text"
@@ -437,7 +445,7 @@
     <footer class="footer section-p">
       <div class="container">
         <div class="grid-container">
-          <div class="grid-item col-md-3">
+          <div class="grid-item col-lg-3">
             <div class="info-box">
               <div class="logo-wrapper">
                 <img
@@ -445,7 +453,7 @@
                   alt="footer-icon"
                   class="footer-icon"
                 />
-                <h6>Mealify</h6>
+                <h5>Mealify</h5>
               </div>
               <p>
                 Mealify is a restaurant landing page that offers a delicious
@@ -453,7 +461,7 @@
               </p>
             </div>
           </div>
-          <div class="grid-item col-md-6">
+          <div class="grid-item col-lg-6">
             <div class="subscribe-box">
               <h6>Subscribe our Newsletter</h6>
               <p>
@@ -476,7 +484,7 @@
               </form>
             </div>
           </div>
-          <div class="grid-item col-md-3">
+          <div class="grid-item col-lg-3">
             <div class="links-box">
               <h6>Get in Touch</h6>
               <ul class="list-unstyled d-flex flex-column gap-xl">
@@ -502,8 +510,74 @@
             </div>
           </div>
         </div>
+
+        <div class="grid-container">
+          <div
+            class="grid-item social-links col-12 col-md-6 col-lg-3 col-sm-12"
+          >
+            <h6 class="text-center">Social Media</h6>
+            <div class="links">
+              <a href="#" class="link-unstyled"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="link-unstyled"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="link-unstyled"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="link-unstyled"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="grid-item quick-links col-12 col-sm-12 col-md-6">
+            <h6>Quick Links</h6>
+            <div class="grid-container justify-content-between">
+              <div class="grid-item col-6 col-sm-6 col-md-6">
+                <div class="gap-sm d-flex flex-column">
+                  <a href="#" class="link-unstyled link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Menu
+                  </a>
+                  <a href="#" class="link-unstyled link"
+                    ><i class="fa-solid fa-chevron-right"></i>
+                    About Us
+                  </a>
+                  <a href="#" class="link-unstyled link"
+                    ><i class="fa-solid fa-chevron-right"></i>
+                    Testimonial
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid-item col-6 col-sm-6 col-md-6">
+                <div class="gap-sm d-flex flex-column">
+                  <a href="#" class="link-unstyled link"
+                    ><i class="fa-solid fa-chevron-right"></i>
+                    Promo
+                  </a>
+                  <a href="#" class="link-unstyled link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Contact
+                  </a>
+                  <a href="#" class="link-unstyled link"
+                    ><i class="fa-solid fa-chevron-right"></i>
+                    Our Partners
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- end footer section -->
   </body>
+
+  <script>
+    document.getElementById("theme-toggle").onclick = function () {
+      document.documentElement.classList.toggle("dark");
+    };
+  </script>
 </html>
