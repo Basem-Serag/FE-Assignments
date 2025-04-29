@@ -10,6 +10,9 @@ body {
 }
 
 /* start navbar */
+.navbar {
+  background: #0000009c;
+}
 .navbar .navbar-brand {
   --bs-navbar-brand-font-size: 1.75rem;
   --bs-navbar-brand-color: #ffffff;
@@ -28,6 +31,9 @@ body {
 .navbar .navbar-nav .nav-item .nav-link {
   position: relative;
   font-weight: 600;
+}
+.navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
+  --bs-nav-link-color: #000;
 }
 .navbar .navbar-nav .nav-item .nav-link.active:before {
   content: "";
@@ -51,6 +57,34 @@ body {
 .navbar .navbar-nav .nav-item .nav-link:hover::before {
   width: 60%;
 }
+.navbar-nav .dropdown-item.dropdown-toggle {
+  color: #1e1e1e;
+}
+.navbar-nav.dropend .dropdown-toggle {
+  color: salmon;
+  margin-left: 1em;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.navbar-nav.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+@media screen and (min-width: 769px) {
+  .navbar-nav.dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .navbar-nav.dropend .dropdown-toggle {
+    margin-left: 0.5em;
+  }
+}
+
 /* end navbar */
 
 /* start header */
