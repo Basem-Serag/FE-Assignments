@@ -61,10 +61,9 @@ body {
   color: #1e1e1e;
 }
 .navbar-nav.dropend .dropdown-toggle {
-  color: salmon;
+  color: #000;
   margin-left: 1em;
 }
-
 .dropdown .dropdown-menu {
   display: none;
 }
