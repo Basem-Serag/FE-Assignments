@@ -122,6 +122,20 @@ body {
   font-size: 3.75rem;
   font-weight: 200;
 }
+.hero-content .social-links {
+  margin-top: 1.875rem;
+  display: flex;
+  justify-content: center;
+}
+.hero-content .social-links .link {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* end header section */
 
 /* start about us section */
