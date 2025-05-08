@@ -126,6 +126,7 @@ body {
   margin-top: 1.875rem;
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
 .hero-content .social-links .link {
   width: 2.1875rem;
