@@ -1,0 +1,118 @@
+/* Font Setup */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: url('../fonts/PTSansCaption-Regular.ttf');
+}
+@font-face {
+  font-family: 'Righteous';
+  src: url('../fonts/Righteous-Regular.ttf');
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  background-color: #f7ecde;
+  padding: 3rem 1rem;
+  color: #222;
+}
+
+.row {
+  border-bottom: 0.0625rem dashed #777;
+  border-top: 0.0625rem dashed #777;
+  padding: 1.875rem 0;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #2c2c2c;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+  width: max-content;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to top, #b5ac498d, #3ca55c6e);
+    transition: height 0.5s ease-in-out;
+  }
+  &:hover::after {
+    height: 70%;
+  }
+}
+
+.row h2 {
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #3ca55c 30%, #b5ac49 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 i {
+  margin: 0 0.5rem;
+}
+
+.form-control:focus {
+  border-color: #b5ac49;
+  box-shadow: 0 0 0 0.25rem #b5ac4931;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+  color: #e74c3c;
+  margin-top: 0.3125rem;
+}
+
+.btn-add {
+  background: linear-gradient(to right, #b5ac49, #3ca55c);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  &:hover {
+    background: linear-gradient(to left, #b5ac49, #3ca55c);
+    color: #fff;
+  }
+}
+
+.btn-visit {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  &:hover {
+    background-color: #3d8d40;
+    color: #fff;
+  }
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: bold;
+  &:hover {
+    background-color: #c24133;
+    color: #fff;
+  }
+}
+
+#noDataCaption {
+  font-style: italic;
+  color: #777;
+  padding: 1rem;
+  text-align: center;
+}

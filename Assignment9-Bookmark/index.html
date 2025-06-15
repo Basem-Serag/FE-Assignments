@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/imgs/bookmark.png" />
+    <link rel="stylesheet" href="../assets/shared/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/shared/icons/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Bookmarker</h1>
+        <div class="row">
+          <h2>
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <form>
+            <div class="col mb-3">
+              <label for="name" class="form-label"
+                ><span
+                  ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+                </span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+                placeholder="Bookmark Name"
+                oninput="validateNameInput()"
+              />
+              <div class="invalid-feedback name-error-feedback"></div>
+            </div>
+            <div class="col mb-3">
+              <label for="url" class="form-label"
+                ><span><i class="fa-solid fa-link pe-2"></i> Site URL </span>
+              </label>
+              <input
+                type="url"
+                class="form-control"
+                id="url"
+                placeholder="Bookmark URL"
+                required
+                oninput="validateURLInput()"
+              />
+              <div class="invalid-feedback url-error-feedback"></div>
+            </div>
+            <button type="button" onclick="onAddBookmark()" class="btn btn-add">
+              <span>
+                <i class="fa fa-plus"></i>
+                Add
+              </span>
+            </button>
+          </form>
+        </div>
+
+        <div class="table-responsive mt-4">
+          <table class="table table-borderless">
+            <caption class="bg-white border-top text-center" id="noDataCaption">
+              <i class="fa fa-bookmark ps-1"></i>
+              No Bookmarks Added Yet.
+            </caption>
+
+            <thead>
+              <tr class="text-center">
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
