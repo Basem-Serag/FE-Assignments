@@ -1,0 +1,40 @@
+@font-face {
+  font-family: TitilliumWeb;
+  src: url('../fonts/TitilliumWeb-Regular.ttf');
+  font-weight: normal;
+}
+
+.custom-shadow {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.text-blue {
+  color: #17a2b8;
+}
+
+.btn-outline-blue {
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+  &:hover {
+    background: #17a2b8;
+    color: #fff;
+  }
+  --bs-btn-disabled-color: #17a2b8;
+}
+
+body {
+  background: #24353f;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+form .form-control {
+  background: transparent;
+  --bs-body-color: #ced4da;
+  &::placeholder {
+    color: #ced4da;
+  }
+  &:focus {
+    background: transparent;
+    box-shadow: none;
+  }
+}

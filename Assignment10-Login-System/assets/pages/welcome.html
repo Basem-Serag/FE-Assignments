@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../assets/shared/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <section class="welcome-section vh-100 overflow-hidden">
+      <nav class="navbar navbar-expand-lg navbar-dark custom-shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#">SMART LOGIN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-outline-warning border border-warning"
+                  href="../../index.html"
+                  onclick="logout()"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container h-100 d-flex align-items-center justify-content-center"
+      >
+        <div class="row w-75 text-center">
+          <div class="col">
+            <div class="welcome-card custom-shadow p-5">
+              <h1 class="card-text text-blue"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const currentUserName = JSON.parse(
+      localStorage.getItem('currentUser')
+    ).name;
+    document.querySelector('.welcome-card .card-text').innerHTML =
+      'Welcome ' + currentUserName;
+
+    function logout() {
+      localStorage.removeItem('currentUser');
+    }
+  </script>
+</html>

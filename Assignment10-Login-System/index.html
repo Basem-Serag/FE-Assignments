@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/shared/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        id="loginForm"
+        class="row has-validation custom-shadow mx-auto mt-5 w-75 p-5"
+        novalidate
+      >
+        <h1 class="form-title text-center text-blue mb-3">
+          Smart Login System
+        </h1>
+
+        <div class="col-12">
+          <div class="form-input mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="Email"
+              aria-label="email input"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="invalid-feedback">Please enter your email.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-input mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="Password"
+              minlength="8"
+              aria-label="password input"
+              placeholder="Enter your password"
+              required
+            />
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-outline-blue my-3 w-100">
+            Login
+          </button>
+        </div>
+
+        <div class="col-12">
+          <p class="text-white text-center">
+            Don’t have an account?
+            <a
+              class="page-navigation-link signup mt-3 link-light link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+              href="#"
+              >Sign Up</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../assets/shared/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./assets/js/main.js"></script>
+</html>
