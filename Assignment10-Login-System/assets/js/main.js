@@ -4,28 +4,10 @@ const PATHS = {
   signup: 'assets/pages/signup.html',
   welcome: 'assets/pages/welcome.html',
 };
-handlePageNavigation();
 
 // page navigation handler
 function handlePageNavigation(targetPath) {
-  const signupLink = document.querySelector('.page-navigation-link.signup');
-  const signinLink = document.querySelector('.page-navigation-link.signin');
-  if (!targetPath) {
-    if (signupLink) {
-      signupLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.location.href = PATHS.signup;
-      });
-    }
-    if (signinLink) {
-      signinLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.location.href = PATHS.login;
-      });
-    }
-  } else {
-    window.location.href = targetPath;
-  }
+  window.location.href = targetPath;
 }
 
 // dynamic form handler
