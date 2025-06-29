@@ -47,6 +47,14 @@ function handleFormSubmit(form) {
 
   for (let i = 0; i < inputs.length; i++) {
     input = inputs[i];
+    const inputValue = input.value.trim();
+    const inputFeedback = input.nextElementSibling;
+    const inputName = input.name;
+    if (!inputValue) {
+      input.classList.add('is-invalid');
+      inputFeedback.innerHTML = `${inputName} is required.`;
+      return;
+    }
     if (form.id === 'signupForm') {
       handleInputValidity(input, isEmailExists, isNameExists);
     } else {
@@ -93,11 +101,10 @@ function handleInputValidity(input, isEmailExists, isNameExists) {
   inputFeedback.innerHTML = '';
 
   if (!inputValue) {
-    input.classList.add('is-invalid');
-    inputFeedback.innerHTML = `${inputName} is required.`;
-    isValid = false;
+    input.classList.remove('is-invalid');
     return;
   }
+
   if (isEmailExists) {
     showErrorToaster('Email already exists');
     isValid = false;
@@ -106,7 +113,7 @@ function handleInputValidity(input, isEmailExists, isNameExists) {
     showErrorToaster('Username already taken');
     isValid = false;
   }
-  if (!input.checkValidity()) {
+  if (inputType && !input.checkValidity()) {
     if (inputType === 'text' || inputType === 'password') {
       if (input.minLength > 0 && inputValue.length < input.minLength) {
         input.classList.add('is-invalid');
