@@ -1,5 +1,5 @@
 'use strict';
-const API_BaseURL = 'http://api.weatherapi.com/v1';
+const API_BaseURL = 'https://api.weatherapi.com/v1';
 const searchInput = document.querySelector('#search');
 const searchButton = document.querySelector('.search-btn');
 const weatherRow = document.querySelector('.weather-row');
@@ -15,7 +15,7 @@ getUserCurrentLocation();
 // render navbar HTML
 function navbarUIRenderer() {
   try {
-    fetch('../../../Assignment11-weather-app/assets/pages/navbar.html', {
+    fetch('./assets/pages/navbar.html', {
       cache: 'force-cache',
     })
       .then((res) => {
