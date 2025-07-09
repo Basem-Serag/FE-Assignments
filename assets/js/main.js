@@ -65,6 +65,13 @@ function getAllProjects() {
       projectLink: './Assignment10-Login-System/index.html',
       projectThumbnail: '../assets/imgs/thumbnail.svg',
     },
+    {
+      projectName: 'Assignment 11 – Weather app',
+      projectDesc:
+        'A clean and responsive Weather App built with JavaScript that displays the current weather information based on the user’s location or searched city.',
+      projectLink: './Assignment11-weather-app/index.html',
+      projectThumbnail: '../assets/imgs/thumbnail.svg',
+    },
   ];
 
   return myProjects;
