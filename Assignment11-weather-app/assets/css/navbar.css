@@ -1,0 +1,40 @@
+/* starting navbar */
+.navbar {
+  padding: 3.125rem;
+  background: var(--primary-color);
+  .brand-logo .navbar-brand {
+    .brand-details {
+      margin-left: 0.625rem;
+      .brand-title {
+        margin-bottom: 0.3125rem;
+      }
+      .brand-info {
+        font-size: 0.625rem;
+      }
+    }
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .navbar-nav {
+    .nav-link {
+      font-size: 0.875rem;
+      padding: 0.3125rem 1.5625rem;
+      margin: 0 0.3125rem;
+      border: 0.125rem solid transparent;
+      border-radius: 1.5625rem;
+      font-weight: 400;
+      transition: 0.5s border, color ease-in-out;
+      --bs-nav-link-color: #fff;
+      &:hover {
+        --bs-nav-link-hover-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+      &.active {
+        --bs-navbar-active-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+    }
+  }
+}
+/* ending navbar */

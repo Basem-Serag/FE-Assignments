@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #1e202b;
+  --secondary-color: #009ad8;
+}
+
+body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #bfc1ce;
+  background: var(--primary-color);
+}
+
+#navbar-placeholder {
+  min-height: 9.375rem;
+  background: var(--primary-color);
+}
+
+/* starting hero section */
+.hero {
+  padding: 4.375rem 0;
+  background: var(--primary-color) url('../imgs/banner.png') no-repeat;
+  height: 100vh;
+}
+.input-box .form-control {
+  padding: 1.25rem 3.125rem 1.25rem 1.25rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  border-radius: 1.875rem;
+  font-size: 0.875rem;
+  &::placeholder {
+    color: #fff;
+    opacity: 0.5;
+  }
+}
+.input-box .custom-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  border-radius: 1.875rem;
+  position: absolute;
+  right: 0.3125rem;
+  top: 0.3125rem;
+  bottom: 0.3125rem;
+  padding: 0 2.5rem;
+  font-size: 0.875rem;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* ending hero section */
+
+.weather-row {
+  margin-top: -30rem;
+  overflow: hidden;
+  padding-bottom: 3.125rem;
+}
+.card {
+  background: #323544;
+  color: #bfc1ce;
+  border-radius: 0;
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  height: 25rem;
+}
+.card .card-header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.625rem;
+  text-align: center;
+  font-weight: 400;
+  border: 0;
+}
+
+.card.another-day-1 {
+  background: #262936;
+  border-radius: 0;
+}
+.card.another-day-2 {
+  border-radius: 0;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+.card .card-body {
+  padding: 1.875rem 1.25rem;
+}
+.card .card-body .card-title {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.card.day-today .card-body .card-title {
+  color: #fff;
+  font-size: 5.625rem;
+  font-weight: 700;
+}
+.card-body .city {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.weather-forecast {
+  font-size: 0.875rem;
+  color: var(--secondary-color);
+  padding: 0.625rem 0;
+}
+
+/* start footer */
+footer {
+  background: #262936;
+  padding: 3.125rem 0;
+}
+
+footer .list-item {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: var(--secondary-color);
+    color: #fff;
+  }
+}
+footer .list-item .link {
+  font-size: 1.125rem;
+}
+/* end footer */

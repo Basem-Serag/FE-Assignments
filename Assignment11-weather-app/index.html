@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather by location app" />
+    <link rel="stylesheet" href="../assets/shared/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/shared/icons/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row px-5">
+          <div class="col-12">
+            <form>
+              <div class="input-box position-relative">
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="search"
+                  name="search"
+                  placeholder="Find your location..."
+                  aria-label="Find your location..."
+                  aria-describedby="button-search"
+                />
+                <button class="btn search-btn custom-btn">Find</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather">
+      <div class="container">
+        <div class="row weather-row px-5">
+          <div class="col-md-4 p-0">
+            <div class="card day-today">
+              <div class="card-header d-flex justify-content-between">
+                <span>day</span>
+                <span>-</span>
+              </div>
+              <div class="card-body">
+                <span class="city">-</span>
+                <h5 class="card-title">0<sup>o</sup>C</h5>
+                <h6 class="weather-forecast">-</h6>
+                <div class="details d-flex gap-3">
+                  <span
+                    ><img
+                      src="./assets/imgs/icon-umberella.png"
+                      width="21"
+                      height="21"
+                      alt="icon-umbrella"
+                    />
+                    0%</span
+                  >
+                  <span
+                    ><img
+                      src="./assets/imgs/icon-wind.png"
+                      width="21"
+                      height="21"
+                      alt="icon-wind"
+                    />
+                    0%</span
+                  >
+                  <span
+                    ><img
+                      src="./assets/imgs/icon-compass.png"
+                      width="21"
+                      height="21"
+                      alt="icon-compass"
+                    />
+                    0%</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card another-day-${i}">
+              <div class="card-header d-flex justify-content-center">day</div>
+              <div
+                class="card-body d-flex flex-column align-items-center gap-2"
+              >
+                <h5 class="card-title">0<sup>o</sup>C</h5>
+                <h6>0<sup>o</sup></h6>
+                <span class="weather-forecast">-</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-0">
+            <div class="card another-day-${i}">
+              <div class="card-header d-flex justify-content-center">day</div>
+              <div
+                class="card-body d-flex flex-column align-items-center gap-2"
+              >
+                <h5 class="card-title">0<sup>o</sup>C</h5>
+                <h6>0<sup>o</sup></h6>
+                <span class="weather-forecast">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row px-5 g-5">
+          <div class="col-md-8">
+            <form>
+              <div class="input-box position-relative">
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="subscribe"
+                  name="subscribe"
+                  placeholder="Find your location..."
+                  aria-label="Find your location..."
+                  aria-describedby="button-subscribe"
+                />
+                <button class="btn subscribe-btn custom-btn">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="social-links d-flex align-items-center h-100">
+              <ul class="list-unstyled d-flex gap-3">
+                <li class="list-item">
+                  <a
+                    href="#"
+                    aria-label="social media link"
+                    class="text-reset link-underline link-underline-opacity-0 link"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a
+                    href="#"
+                    aria-label="social media link"
+                    class="text-reset link-underline link-underline-opacity-0 link"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a
+                    href="#"
+                    aria-label="social media link"
+                    class="text-reset link-underline link-underline-opacity-0 link"
+                  >
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-item">
+                  <a
+                    href="#"
+                    aria-label="social media link"
+                    class="text-reset link-underline link-underline-opacity-0 link"
+                  >
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="px-5 mt-5">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="../assets/shared/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sweetalert2.js"></script>
+  <script src="./assets/js/main.js"></script>
+</html>
