@@ -12,10 +12,10 @@ navbarUIRenderer();
 searchByLocation();
 getUserCurrentLocation();
 
-// render navbar HTML
+// Load navbar.html dynamically into all pages
 function navbarUIRenderer() {
   try {
-    fetch('./assets/pages/navbar.html', {
+    fetch('assets/pages/navbar.html', {
       cache: 'force-cache',
     })
       .then((res) => {
@@ -23,10 +23,28 @@ function navbarUIRenderer() {
       })
       .then((data) => {
         document.getElementById('navbar-placeholder').innerHTML = data;
-        const currentPage = location.pathname;
-        document.querySelectorAll('.nav-link').forEach((link) => {
-          if (link.getAttribute('href') === currentPage)
-            link.classList.toggle('active');
+        const currentPath = location.pathname;
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach((link) => {
+          let href = link.getAttribute('href');
+
+          if (currentPath.includes('/pages/')) {
+            if (href === 'index.html') {
+              link.setAttribute('href', '../index.html');
+            }
+            if (href === 'pages/news.html') {
+              link.setAttribute('href', 'news.html');
+              link.classList.add('active');
+            }
+          } else {
+            if (href === 'index.html') {
+              link.setAttribute('href', 'index.html');
+              link.classList.add('active');
+            }
+            if (href === 'pages/news.html') {
+              link.setAttribute('href', 'pages/news.html');
+            }
+          }
         });
       });
   } catch (err) {

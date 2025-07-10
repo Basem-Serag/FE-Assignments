@@ -101,7 +101,7 @@
   <script src="../../../assets/shared/js/bootstrap.bundle.min.js"></script>
   <script>
     try {
-      fetch('../../assets/pages/navbar.html', {
+      fetch('./navbar.html', {
         cache: 'force-cache',
       })
         .then((res) => {
@@ -109,10 +109,28 @@
         })
         .then((data) => {
           document.getElementById('navbar-placeholder').innerHTML = data;
-          const currentPage = location.pathname;
-          document.querySelectorAll('.nav-link').forEach((link) => {
-            if (link.getAttribute('href') === currentPage)
-              link.classList.toggle('active');
+          const currentPath = location.pathname;
+          const links = document.querySelectorAll('.nav-link', 'navbar-brand');
+
+          links.forEach((link) => {
+            let href = link.getAttribute('href');
+            if (currentPath.includes('/pages/')) {
+              if (href === 'index.html') {
+                link.setAttribute('href', '../../index.html');
+              }
+              if (href === 'assets/pages/news.html') {
+                link.setAttribute('href', 'news.html');
+                link.classList.add('active');
+              }
+            } else {
+              if (href === 'index.html') {
+                link.setAttribute('href', 'index.html');
+                link.classList.add('active');
+              }
+              if (href === 'pages/news.html') {
+                link.setAttribute('href', 'pages/news.html');
+              }
+            }
           });
         });
     } catch (err) {
